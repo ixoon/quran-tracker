@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "quran-tracker",
+    "name": "Quran Tracker",
     "slug": "quran-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,16 +8,29 @@
     "scheme": "qurantracker",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.qurantracker.app"
     },
     "android": {
+      "versionCode": 1,
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#5E54F2",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "package": "com.qurantracker.app",
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -26,6 +39,20 @@
     },
     "plugins": [
       "expo-router",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Quran Tracker uses your location to show Qibla direction and prayer times."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#16a34a"
+        }
+      ],
       [
         "expo-splash-screen",
         {
@@ -33,10 +60,24 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      "expo-audio",
+      [
+        "expo-web-browser",
+        {
+          "experimentalLauncherActivity": false
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "72c257b6-174c-4f2a-afc6-5c93102a347f"
+      }
+    },
+    "owner": "ixoon07"
   }
 }

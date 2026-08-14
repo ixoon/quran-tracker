@@ -1,6 +1,12 @@
-import { useColorScheme as useColorSchemeCore } from 'react-native';
+import { useColorScheme as useSystemColorScheme } from 'react-native';
 
-export const useColorScheme = () => {
-  const coreScheme = useColorSchemeCore();
-  return coreScheme === 'unspecified' ? 'light' : coreScheme;
-};
+import { useSettingsStore } from '@/stores/settingsStore';
+
+export function useColorScheme(): 'light' | 'dark' {
+  const theme = useSettingsStore((s) => s.theme);
+  const systemScheme = useSystemColorScheme();
+
+  if (theme === 'light') return 'light';
+  if (theme === 'dark') return 'dark';
+  return systemScheme === 'dark' ? 'dark' : 'light';
+}
