@@ -1,7 +1,7 @@
 # Privacy Policy — Quran Tracker
 
 **Last updated:** August 2026  
-**Contact:** [YOUR_EMAIL@example.com]
+**Contact:** webdevelopment492@gmail.com
 
 Quran Tracker ("we", "the app") helps you track Quran reading, prayer times, zikr, and related spiritual habits. This policy explains what data the app uses and how it is handled.
 
@@ -91,8 +91,4 @@ We may update this policy. The "Last updated" date will change when we do. Conti
 
 ## Contact
 
-Questions about this policy: **[YOUR_EMAIL@example.com]**
-
----
-
-**Before publishing:** Replace `[YOUR_EMAIL@example.com]` with your support email, host this file at a public URL, and set that URL in `lib/constants.ts` → `PRIVACY_POLICY_URL`.
+Questions about this policy: **webdevelopment492@gmail.com**

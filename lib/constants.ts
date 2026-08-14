@@ -26,5 +26,5 @@ export const DEFAULT_RECITER_ID = 'ar.alafasy';
 
 export const SURAH_LIST_CACHE_KEY = 'quran_cache:surah-list';
 
-/** Host docs/privacy-policy.md online and set the public URL before Play Store publish. */
-export const PRIVACY_POLICY_URL = 'https://YOUR_URL/privacy';
+/** Public privacy policy (GitHub Pages). Enable: repo Settings → Pages → main → /docs */
+export const PRIVACY_POLICY_URL = 'https://ixoon.github.io/quran-tracker/privacy-policy';
