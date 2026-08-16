@@ -77,6 +77,8 @@ These services have their own privacy policies.
 - **Account deletion:** In Profile → Delete account, you can permanently delete your account and associated cloud auth data.
 - Local data on your device is not automatically deleted when you delete your account; uninstall the app or clear storage to remove it.
 
+For step-by-step account deletion (in the app or by email), see [Delete your account](delete-account.html).
+
 ## Security
 
 Account authentication uses industry-standard practices through Supabase. Data in transit uses HTTPS/TLS.
